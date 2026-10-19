@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RazorByte | Desenvolvimento de Software</title>
+  <meta name="description" content="RazorByte é uma empresa de desenvolvimento de software. Conheça o Laço, nosso produto que conecta cuidadores e idosos, e o time por trás dele.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="site-header" id="siteHeader">
+  <div class="site-header-inner">
+    <a href="#" class="site-logo" aria-label="RazorByte">
+      <img src="imagi/logotomia.png" alt="RazorByte">
+    </a>
+
+    <nav class="site-nav" id="menu" aria-label="Principal">
+      <a href="#about">Sobre</a>
+      <a href="#review">Projetos</a>
+      <a href="#equipe">Equipe</a>
+      <a href="#address">Parceiros</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <div class="site-actions">
+      <a class="btn-cta" href="#contato">
+        Fale conosco
+      </a>
+      <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero-top">
+  <div class="hero-top-inner">
+    <h1 class="hero-h1">
+      RazorByte é<br>
+      <span class="hl" id="hl"><span class="hl-text" id="hlText">ágil</span></span>
+    </h1>
+    <div class="hero-options" id="heroOptions" aria-label="Trocar adjetivo do título"></div>
+    <p class="hero-lead">Criamos software rápido, elegante e eficiente. Nosso principal produto, o Laço, conecta cuidadores e idosos.</p>
+    <div class="hero-actions">
+      <a class="pill pill-dark" href="#review">Conhecer o Laço</a>
+      <a class="pill pill-line" href="#equipe">Conhecer a equipe</a>
+    </div>
+  </div>
+</section>
+
+ <!-- CARROSSEL -->
+<section class="galeria" id="galeria" aria-roledescription="carrossel" aria-label="Fotos da RazorByte">
+  <div class="galeria-pin">
+    <div class="galeria-frame">
+
+      <div class="galeria-track" id="track">
+        <figure class="galeria-slide"><img src="imagi/visu1.png" alt="Time RazorByte trabalhando em uma sprint"></figure>
+        <figure class="galeria-slide"><img src="imagi/coder.png" alt="Tela do produto Laço em desenvolvimento"></figure>
+        <figure class="galeria-slide"><img src="imagi/eteco.png" alt="Reunião de planejamento da equipe RazorByte"></figure>
+        <figure class="galeria-slide"><img src="imagi/visuLaco.png" alt="Protótipo de interface do Laço"></figure>
+        <figure class="galeria-slide"><img src="imagi/work.png" alt="Equipe RazorByte na Etec de Guaianases"></figure>
+      </div>
+
+      <div class="galeria-bar">
+        <p class="galeria-legenda" id="legenda" aria-live="polite"></p>
+        <div class="galeria-dots" id="dots"></div>
+          <div class="galeria-ctrls">
+          <button class="galeria-ctrl" id="prev" type="button" aria-label="Slide anterior">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6" /></svg>
+          </button>
+          <button class="galeria-ctrl" id="next" type="button" aria-label="Próximo slide">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6" /></svg>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- SOBRE -->
+  <section id="about">
+    <div class="about-inner">
+      <div class="about-top reveal">
+        <div class="about-text">
+          <h2 class="about-title">Sobre a<br><span>Razorbyte</span></h2>
+          <p class="about-p">A RazorByte é uma empresa de desenvolvimento de software criada por jovens apaixonados por tecnologia. Nascemos com um propósito claro: transformar ideias em soluções digitais rápidas, elegantes e eficientes.</p>
+          <p class="about-p">Nosso principal projeto, o <strong class="grad-text">Laço</strong>, conecta cuidadores a idosos — provando que tecnologia pode gerar impacto humano real.</p>
+          <a class="about-cta" href="#review">
+            Ver nossos projetos
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="about-visual">
+          <div class="about-stats">
+            <div class="about-stat">
+              <div class="about-stat-n">8</div>
+              <div class="about-stat-l">Membros da equipe</div>
+            </div>
+            <div class="about-stat">
+              <div class="about-stat-n">2</div>
+              <div class="about-stat-l">Parceiros oficiais</div>
+            </div>
+            <div class="about-stat">
+              <div class="about-stat-n">1</div>
+              <div class="about-stat-l">Produto em desenvolvimento</div>
+            </div>
+            <div class="about-stat">
+              <div class="about-stat-n">100%</div>
+              <div class="about-stat-l">Foco em inovação</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETOS -->
+  <section class="destaques projects-section" id="review">
+    <div class="projects-inner">
+      <div class="projects-heading reveal">
+        <h2 class="title">Principal <span>Projeto</span></h2>
+        <p class="projects-sub">
+          Uma solução pensada para aproximar pessoas, facilitar cuidados e gerar impacto no dia a dia.
+        </p>
+      </div>
+
+      <article class="project-feature reveal">
+        <div class="project-feature-media">
+          <img src="imagi/lacooo.jpeg" alt="Projeto Laço">
+          <span class="project-media-caption">RAZORBYTE / 2026</span>
+        </div>
+
+        <div class="project-feature-content">
+          <h3 class="project-name grad-text">Laço</h3>
+          <p class="project-description">
+            O Laço é um projeto dedicado a conectar pessoas que necessitam de apoio e cuidados,
+            especificamente idosos, a cuidadores de confiança.
+          </p>
+
+          <div class="project-details">
+            <div>
+              <span class="project-detail-label">PROPÓSITO</span>
+              <strong>Conexões que cuidam</strong>
+            </div>
+            <div>
+              <span class="project-detail-label">FOCO</span>
+              <strong>Impacto humano</strong>
+            </div>
+          </div>
+
+          <a href="./index2.html" class="project-cta">
+            <span>Conheça o Laço</span>
+            <span class="project-cta-icon" aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- EQUIPE -->
+  <section id="equipe">
+    <div class="equipe-inner">
+      <div class="equipe-header reveal">
+        <h2 class="title">As pessoas por trás da <span>RazorByte</span></h2>
+        <p class="equipe-sub">Um time apaixonado por tecnologia e comprometido em transformar ideias em soluções reais.</p>
+      </div>
+    </div>
+
+    <!-- GRID 1: 4 membros -->
+    <div class="equipe-grid">
+      <!-- MEMBRO 1 -->
+      <div class="member-card reveal">
+        <div class="member-photo-wrap">
+          <img class="member-photo" src="imagi/DIEGO.png" alt="Diego Sousa">
+        </div>
+        <div class="member-name">Diego Sousa</div>
+        <div class="member-role">@ssoa89</div>
+        <div class="member-socials">
+          <a class="member-soc" href="https://www.instagram.com/89ssoa/" aria-label="Instagram" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a class="member-soc" href="https://www.linkedin.com/in/diego-sousa-4198933b6/?skipRedirect=true" aria-label="LinkedIn" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a class="member-soc" href="https://github.com/ssoa89" aria-label="GitHub" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- MEMBRO 2 -->
+      <div class="member-card reveal">
+        <div class="member-photo-wrap">
+          <img class="member-photo" src="imagi/DavidP.png" alt="David Santos">
+        </div>
+        <div class="member-name">David Santos</div>
+        <div class="member-role">@David-Santos0</div>
+        <div class="member-socials">
+          <a class="member-soc" href="https://www.instagram.com/david_sant77_/" aria-label="Instagram" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a class="member-soc" href="https://www.linkedin.com/in/francisco-david-oliveira-santos-087844314/" aria-label="LinkedIn" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a class="member-soc" href="https://github.com/David-Santos0" aria-label="GitHub" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- MEMBRO 3 -->
+      <div class="member-card reveal">
+        <div class="member-photo-wrap">
+          <img class="member-photo" src="imagi/Arthur.png" alt="Bárbara Delmondes">
+        </div>
+        <div class="member-name">Bárbara Delmondes</div>
+        <div class="member-role">@its-insomnia</div>
+        <div class="member-socials">
+          <a class="member-soc" href="https://www.instagram.com/delmondees/" aria-label="Instagram" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a class="member-soc" href="https://www.linkedin.com/in/barbara-delmondes-32a731380/" aria-label="LinkedIn" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a class="member-soc" href="https://github.com/its-insomnia" aria-label="GitHub" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- MEMBRO 4 -->
+      <div class="member-card reveal">
+        <div class="member-photo-wrap">
+          <img class="member-photo" src="imagi/joao.png" alt="João Lopes">
+        </div>
+        <div class="member-name">João Lopes</div>
+        <div class="member-role">@joao-souls</div>
+        <div class="member-socials">
+          <a class="member-soc" href="https://www.instagram.com/jv_l0p3s/" aria-label="Instagram" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a class="member-soc" href="#" aria-label="LinkedIn" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a class="member-soc" href="https://github.com/joao-souls" aria-label="GitHub" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- GRID 2: 4 membros -->
+    <div class="equipe-grid">
+      <!-- MEMBRO 5 -->
+      <div class="member-card reveal">
+        <div class="member-photo-wrap">
+          <img class="member-photo" src="imagi/Henrique.png" alt="Henrique Silva">
+        </div>
+        <div class="member-name">Henrique Silva</div>
+        <div class="member-role">@Henrique-dev11</div>
+        <div class="member-socials">
+          <a class="member-soc" href="https://www.instagram.com/cauehzv/" aria-label="Instagram" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a class="member-soc" href="https://www.linkedin.com/in/henrique-dev11?utm_source=share_via&utm_content=profile&utm_medium=member_ios" aria-label="LinkedIn" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a class="member-soc" href="https://github.com/Henrique-dev11" aria-label="GitHub" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- MEMBRO 6 -->
+      <div class="member-card reveal">
+        <div class="member-photo-wrap">
+          <img class="member-photo" src="imagi/caio.png" alt="Caio Queiroz">
+        </div>
+        <div class="member-name">Caio Queiroz</div>
+        <div class="member-role">@Caio-Queiroz26</div>
+        <div class="member-socials">
+          <a class="member-soc" href="https://www.instagram.com/nevxsz_/" aria-label="Instagram" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a class="member-soc" href="https://www.linkedin.com/in/caio-queiroz-b9b1173aa/" aria-label="LinkedIn" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a class="member-soc" href="https://github.com/Caio-Queiroz26" aria-label="GitHub" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- MEMBRO 7 -->
+      <div class="member-card reveal">
+        <div class="member-photo-wrap">
+          <img class="member-photo" src="imagi/Gabriel.png" alt="Gabriel Quirino">
+        </div>
+        <div class="member-name">Gabriel Quirino</div>
+        <div class="member-role">@gq31917-lab</div>
+        <div class="member-socials">
+          <a class="member-soc" href="https://www.instagram.com/gabrielquirino/" aria-label="Instagram" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a class="member-soc" href="https://www.linkedin.com/in/gabriel-quirino-1965953b5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" aria-label="LinkedIn" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a class="member-soc" href="https://github.com/gq31917-lab" aria-label="GitHub" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- MEMBRO 8 -->
+      <div class="member-card reveal">
+        <div class="member-photo-wrap">
+          <img class="member-photo" src="imagi/Davi.png" alt="Davi Areia">
+        </div>
+        <div class="member-name">Davi Areia</div>
+        <div class="member-role">Membro do time</div>
+        <div class="member-socials">
+          <a class="member-soc" href="https://www.instagram.com/davi.simoes.395454?igsh=OHBobWo1b3cxazJw" aria-label="Instagram" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a class="member-soc" href="https://www.facebook.com/share/1ETb9nqEKZ/" aria-label="Facebook" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- PARCEIROS -->
+  <section id="address" class="partners-section">
+    <div class="partners-inner">
+      <div class="partners-heading reveal">
+        <h2 class="title">Quem caminha com a <span>RazorByte</span></h2>
+        <p class="partners-sub">
+          Construímos relações que transformam conhecimento, tecnologia e colaboração em impacto real.
+        </p>
+      </div>
+
+      <div class="partners-grid">
+        <!-- PARCEIRO 1 -->
+        <article class="partner-card reveal">
+          <div class="partner-card-media">
+            <img src="imagi/auvotis.jpeg" alt="Auvox">
+            <span class="partner-index">01</span>
+          </div>
+
+          <div class="partner-card-body">
+            <span class="badge">Parceiro Oficial</span>
+            <h3>Auvox — Onde a inovação tem valor de Ouro</h3>
+            <p>
+              Trabalhamos lado a lado com a Auvox para entregar soluções de alto impacto com excelência e inovação.
+            </p>
+          </div>
+        </article>
+
+        <!-- PARCEIRO 2 -->
+        <article class="partner-card reveal">
+          <div class="partner-card-media">
+            <img src="imagi/SkillDev.png" alt="SkillDev">
+            <span class="partner-index">02</span>
+          </div>
+
+          <div class="partner-card-body">
+            <span class="badge">Parceiro Oficial</span>
+            <h3>SkillDev — Soluções que conectam</h3>
+            <p>
+              Trabalhamos lado a lado com a SkillDev para entregar soluções de alto impacto com excelência e inovação.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato">
+    <div class="contato-inner">
+      <div class="contato-header reveal">
+        <h2 class="contato-title">Entre em <span>Contato</span></h2>
+        <p class="contato-sub">Tem alguma dúvida, quer fazer parceria ou avaliar nosso serviço? A RazorByte está pronta pra ouvir.</p>
+      </div>
+
+      <div class="contato-grid reveal">
+        <!-- FORMULÁRIO -->
+        <div class="contato-form-wrap">
+          <div class="form-success" id="form-success">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12" />
+            </svg>
+            Mensagem enviada! Logo entraremos em contato.
+          </div>
+
+          <div class="form-error" id="form-error"></div>
+
+          <form class="contato-form" action="envioMail.php" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="nome">Nome</label>
+                <input class="form-inp" type="text" id="nome" name="nome" autocomplete="name" placeholder="Seu nome" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="email">E-mail</label>
+                <input class="form-inp" type="email" id="email" name="email" autocomplete="email" placeholder="seu@email.com" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="assunto">Assunto</label>
+              <select class="form-inp" id="assunto" name="assunto" required>
+                <option value="">Selecione um assunto</option>
+                <option value="Parceria comercial">Parceria comercial</option>
+                <option value="Projeto Laço">Projeto Laço</option>
+                <option value="Problemas com o Laço">Problemas com o Laço</option>
+                <option value="Dúvidas">Dúvidas</option>
+                <option value="Outro">Outro</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="msg">Mensagem</label>
+              <textarea class="form-inp form-textarea" id="msg" name="mensagem" placeholder="Conte um pouco mais sobre o que você precisa..." rows="6" required></textarea>
+            </div>
+
+            <button class="form-btn" type="submit">Enviar mensagem</button>
+          </form>
+        </div>
+
+        <!-- INFO LATERAL -->
+        <div class="contato-info">
+          <div class="info-card">
+            <div class="info-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <div class="info-label">E-mail</div>
+              <a class="info-val" href="mailto:razorbytedev@gmail.com">razorbytedev@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </div>
+            <div>
+              <div class="info-label">Instagram</div>
+              <a class="info-val" href="https://www.instagram.com/razorbyte.dev/" target="_blank" rel="noopener">@razorbyte.dev</a>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <div class="info-label">Localização</div>
+              <iframe class="footer-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.0!2d-46.3980!3d-23.5270!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce6552b4a0e5b1%3A0x1!2sEtec+de+Guaianases!5e0!3m2!1spt-BR!2sbr!4v1700000000000" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Localização RazorByte — São Paulo, SP" height="182" width="100%"></iframe>
+              <div class="info-val">Etec de Guaianases<br>R. Maneco Quitanda, 108 — SP</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="cut cut-to-ink">
+    <svg viewBox="0 0 100 4" preserveAspectRatio="none">
+      <polygon points="0,4 100,4 100,0"></polygon>
+    </svg>
+  </div>
+
+  <!-- FOOTER -->
+  <footer id="login">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-brand-name">RazorByte</div>
+          <p class="footer-brand-tagline">AGILIDADE NATURAL, PRECISÃO DIGITAL.</p>
+
+          <div class="footer-socials">
+            <a class="footer-social-btn" href="https://www.instagram.com/razorbyte.dev/" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a class="footer-social-btn" href="#" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a class="footer-social-btn" href="#" aria-label="GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-col-title">Produto</div>
+          <ul>
+            <li><a href="#">Visão geral</a></li>
+            <li><a href="#review">Projetos</a></li>
+            <li><a href="./index2.html">Laço</a></li>
+            <li><a href="#address">Parceiros</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-col-title">Empresa</div>
+          <ul>
+            <li><a href="#about">Sobre nós</a></li>
+            <li><a href="#equipe">Equipe</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2026 RazorByte. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPT (agora no fim do body, dentro de DOMContentLoaded) -->
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+
+  // ── MENU + HEADER ──
+var menuBtn = document.getElementById("menuBtn");
+var menu = document.getElementById("menu");
+
+function fecharMenu() {
+  menu.classList.remove("open");
+  menuBtn.textContent = "Menu";
+  menuBtn.setAttribute("aria-expanded", "false");
+}
+
+menuBtn.addEventListener("click", function() {
+  var aberto = menu.classList.toggle("open");
+  menuBtn.textContent = aberto ? "Fechar" : "Menu";
+  menuBtn.setAttribute("aria-expanded", aberto);
+});
+menu.querySelectorAll("a").forEach(function(a) {
+  a.addEventListener("click", fecharMenu);
+});
+window.addEventListener("resize", function() {
+  if (window.innerWidth > 1000) fecharMenu();
+});
+
+// link ativo conforme a seção visível
+if ("IntersectionObserver" in window) {
+  var links = menu.querySelectorAll("a");
+  var spy = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) {
+      if (!e.isIntersecting) return;
+      links.forEach(function(a) {
+        a.classList.toggle("active", a.getAttribute("href") === "#" + e.target.id);
+      });
+    });
+  }, { rootMargin: "-40% 0px -55% 0px" });
+  ["about", "review", "equipe", "address", "contato"].forEach(function(id) {
+    var s = document.getElementById(id);
+    if (s) spy.observe(s);
+  });
+}
+    // ── CARROSSEL ──
+    (function() {
+      var track = document.getElementById("track");
+      if (!track) return;
+      var slides = track.children;
+      var total = slides.length;
+      if (!total) return;
+
+      var dotsBox = document.getElementById("dots");
+      var legenda = document.getElementById("legenda");
+      var frame = document.querySelector(".galeria-frame");
+      var atual = 0;
+      var timer = null;
+      var reduzMovimento = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+      for (var i = 0; i < total; i++) {
+        var dot = document.createElement("button");
+        dot.type = "button";
+        dot.className = "galeria-dot";
+        dot.setAttribute("aria-label", "Ir para o slide " + (i + 1));
+        dot.setAttribute("data-i", i);
+        dot.addEventListener("click", function() {
+          irPara(parseInt(this.getAttribute("data-i"), 10));
+          iniciar();
+        });
+        dotsBox.appendChild(dot);
+      }
+      var dots = dotsBox.children;
+
+      function irPara(i) {
+        atual = (i + total) % total;
+        track.style.transform = "translateX(-" + (atual * 100) + "%)";
+        for (var s = 0; s < total; s++) {
+          slides[s].setAttribute("aria-hidden", s !== atual);
+          dots[s].classList.toggle("active", s === atual);
+        }
+        var img = slides[atual].querySelector("img");
+        if (img && legenda) legenda.textContent = img.alt;
+      }
+
+      function parar() { clearInterval(timer); }
+
+      function iniciar() {
+        if (reduzMovimento) return;
+        parar();
+        timer = setInterval(function() { irPara(atual + 1); }, 6000);
+      }
+
+      var prev = document.getElementById("prev");
+      var next = document.getElementById("next");
+      if (prev) prev.addEventListener("click", function() { irPara(atual - 1); iniciar(); });
+      if (next) next.addEventListener("click", function() { irPara(atual + 1); iniciar(); });
+
+      if (frame) {
+        frame.addEventListener("mouseenter", parar);
+        frame.addEventListener("mouseleave", iniciar);
+
+        var x0 = null;
+        frame.addEventListener("touchstart", function(e) {
+          x0 = e.touches[0].clientX;
+          parar();
+        }, { passive: true });
+        frame.addEventListener("touchend", function(e) {
+          if (x0 === null) return;
+          var dx = e.changedTouches[0].clientX - x0;
+          if (Math.abs(dx) > 50) irPara(atual + (dx < 0 ? 1 : -1));
+          x0 = null;
+          iniciar();
+        });
+      }
+
+      irPara(0);
+      iniciar();
+    })();
+// ── CARROSSEL: expansão conforme scroll ──
+(function() {
+  var galeria = document.getElementById("galeria");
+  if (!galeria) return;
+  var pin = galeria.querySelector(".galeria-pin");
+  if (!pin) return;
+
+  // se o usuário prefere menos movimento, não anima
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+  var ticking = false;
+
+  function update() {
+    var headerH = document.getElementById("siteHeader").offsetHeight;
+    var rect = galeria.getBoundingClientRect();
+    var total = galeria.offsetHeight - pin.offsetHeight;
+    if (total <= 0) return;
+    var p = (headerH - rect.top) / total;
+    // clamp 0..1
+    if (p < 0) p = 0;
+    if (p > 1) p = 1;
+    pin.style.setProperty("--p", p.toFixed(4));
+    ticking = false;
+  }
+
+  function onScroll() {
+    if (!ticking) {
+      requestAnimationFrame(update);
+      ticking = true;
+    }
+  }
+
+  window.addEventListener("scroll", onScroll, { passive: true });
+  window.addEventListener("resize", update);
+
+  // estado inicial
+  update();
+})();
+    // ── TEXTO DESLIZANDO ──
+    function splitWords(el) {
+      var n = 0;
+      (function walk(node) {
+        Array.prototype.slice.call(node.childNodes).forEach(function(child) {
+          if (child.nodeType === 3) {
+            var frag = document.createDocumentFragment();
+            child.textContent.split(/(\s+)/).forEach(function(part) {
+              if (!part) return;
+              if (/^\s+$/.test(part)) {
+                frag.appendChild(document.createTextNode(" "));
+                return;
+              }
+              var w = document.createElement("span");
+              w.className = "w";
+              var inner = document.createElement("span");
+              inner.className = "wi";
+              inner.style.setProperty("--i", n++);
+              inner.textContent = part;
+              w.appendChild(inner);
+              frag.appendChild(w);
+            });
+            node.replaceChild(frag, child);
+          } else if (child.nodeType === 1 && child.tagName !== "BR") {
+            walk(child);
+          }
+        });
+      })(el);
+      el.classList.add("split-words");
+    }
+
+    document.querySelectorAll(".title, .about-title, .contato-title").forEach(function(el) {
+      el.classList.remove("reveal");
+      splitWords(el);
+    });
+
+    // ── IMAGENS: zoom dentro da moldura ──
+    document.querySelectorAll(".card > img, .card2 > img").forEach(function(img) {
+      var wrap = document.createElement("div");
+      wrap.className = "img-zoom";
+      img.parentNode.insertBefore(wrap, img);
+      wrap.appendChild(img);
+    });
+
+    // ── REVEAL: direção de cada bloco ──
+    function setAnim(sel, type) {
+      document.querySelectorAll(sel).forEach(function(el) {
+        el.classList.add("reveal");
+        if (type !== "up") el.setAttribute("data-anim", type);
+      });
+    }
+
+    var aboutTop = document.querySelector(".about-top");
+    var contatoGrid = document.querySelector(".contato-grid");
+    if (aboutTop) aboutTop.classList.remove("reveal");
+    if (contatoGrid) contatoGrid.classList.remove("reveal");
+
+    setAnim(".about-text", "left");
+    setAnim(".about-visual", "right");
+    setAnim(".about-stat", "zoom");
+    setAnim(".contato-form-wrap", "left");
+    setAnim(".contato-info", "right");
+    setAnim(".footer-brand, .footer-col", "up");
+
+    [".equipe-grid", ".about-stats", ".footer-top"].forEach(function(sel) {
+      document.querySelectorAll(sel).forEach(function(group) {
+        var i = 0;
+        Array.prototype.forEach.call(group.children, function(el) {
+          if (!el.classList.contains("reveal")) return;
+          el.setAttribute("data-delay", i * 100);
+          el.style.transitionDelay = (i * 100) + "ms";
+          i++;
+        });
+      });
+    });
+
+    // ── REVEAL ON SCROLL ──
+    if ("IntersectionObserver" in window) {
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(e) {
+          if (!e.isIntersecting) return;
+          var el = e.target;
+          el.classList.add("visible");
+          observer.unobserve(el);
+
+          if (el.classList.contains("reveal")) {
+            var d = parseInt(el.getAttribute("data-delay") || 0, 10);
+            setTimeout(function() {
+              el.style.transitionDelay = "";
+              el.classList.add("reveal-done");
+            }, d + 800);
+          }
+        });
+      }, { threshold: 0.15, rootMargin: "0px 0px -6% 0px" });
+
+      document.querySelectorAll(".reveal, .split-words").forEach(function(el) {
+        observer.observe(el);
+      });
+    } else {
+      document.querySelectorAll(".reveal, .split-words").forEach(function(el) {
+        el.classList.add("visible");
+      });
+    }
+
+    // ── CONTADOR ANIMADO ──
+    var statEls = document.querySelectorAll(".about-stat-n");
+    if ("IntersectionObserver" in window && statEls.length) {
+      var statObserver = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (!entry.isIntersecting) return;
+          var el = entry.target;
+          var raw = el.textContent.trim();
+          var match = raw.match(/^(\d+)(.*)$/);
+          if (!match) { statObserver.unobserve(el); return; }
+          var target = parseInt(match[1], 10);
+          var suffix = match[2] || "";
+          var duration = 900;
+          var start = null;
+
+          function step(ts) {
+            if (start === null) start = ts;
+            var progress = Math.min((ts - start) / duration, 1);
+            var eased = 1 - Math.pow(1 - progress, 3);
+            el.textContent = Math.round(eased * target) + suffix;
+            if (progress < 1) requestAnimationFrame(step);
+          }
+          requestAnimationFrame(step);
+          statObserver.unobserve(el);
+        });
+      }, { threshold: 0.4 });
+      statEls.forEach(function(el) { statObserver.observe(el); });
+    }
+
+    // ── MENSAGEM DO FORMULÁRIO ──
+    var params = new URLSearchParams(window.location.search);
+    var ok = document.getElementById("form-success");
+    var erro = document.getElementById("form-error");
+
+    if (params.get("enviado") === "1" && ok) ok.style.display = "flex";
+    if (params.get("enviado") === "0" && erro) {
+      erro.style.display = "block";
+      erro.textContent = "Erro ao enviar. Tente novamente mais tarde.";
+    }
+    if (params.get("enviado") !== null || params.get("erros")) {
+      var secContato = document.getElementById("contato");
+      if (secContato) secContato.scrollIntoView();
+    }
+    if (params.get("erros") && erro) {
+      erro.style.display = "block";
+      erro.textContent = decodeURIComponent(params.get("erros")).replace(/\|/g, " • ");
+    }
+  });
+
+
+      // ── HERO: adjetivos rotativos ──
+      (function() {
+      var hl = document.getElementById("hl");
+      var hlText = document.getElementById("hlText");
+      var box = document.getElementById("heroOptions");
+      if (!hl || !hlText || !box) return;
+
+      var words = ["ágil", "precisa", "elegante", "eficiente", "inovadora", "humana"];
+      var atual = 0;
+      var timer = null;
+      var reduz = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+      words.forEach(function(w, idx) {
+        var b = document.createElement("button");
+        b.type = "button";
+        b.className = "hero-opt" + (idx === 0 ? " active" : "");
+        b.textContent = w;
+        b.addEventListener("click", function() { ir(idx); iniciar(); });
+        box.appendChild(b);
+      });
+      var opts = box.children;
+
+      function ajustar() { hl.style.width = hlText.offsetWidth + "px"; }
+
+      function ir(idx) {
+        if (idx === atual) return;
+        atual = idx;
+        for (var k = 0; k < opts.length; k++) {
+          opts[k].classList.toggle("active", k === atual);
+        }
+        hlText.classList.add("out");
+        setTimeout(function() {
+          hlText.textContent = words[atual];
+          ajustar();
+          hlText.classList.remove("out");
+        }, 280);
+      }
+
+      function parar() { clearInterval(timer); }
+      function iniciar() {
+        if (reduz) return;
+        parar();
+        timer = setInterval(function() { ir((atual + 1) % words.length); }, 3200);
+      }
+
+      box.addEventListener("mouseenter", parar);
+      box.addEventListener("mouseleave", iniciar);
+      window.addEventListener("resize", ajustar);
+
+      // espera a fonte Syne carregar para medir a largura certa
+      (document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve())
+        .then(function() { ajustar(); iniciar(); });
+    })();
+  </script>
+
+</body>
+</html> 
