@@ -1,237 +1,222 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laço — Cuidado que conecta famílias e cuidadores</title>
-    <meta name="description" content="O Laço conecta cuidadores de confiança a idosos e suas famílias, acompanhando rotina, saúde e bem-estar em um só lugar.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,400;0,500;0,600;1,500&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
-    <link rel="stylesheet" href="style2.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Laço — Cuidado que conecta famílias e cuidadores</title>
+<meta name="description" content="O Laço conecta cuidadores de confiança a idosos e suas famílias, acompanhando rotina, saúde e bem-estar em um só lugar.">
+<meta name="theme-color" content="#2E1230">
+<meta property="og:title" content="Laço — Cuidado que conecta">
+<meta property="og:description" content="Cuidadores de confiança, escolhidos pela família, com histórico de cada visita.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="./imgLaco/v1.png">
+<link rel="icon" href="./imgLaco/laco.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Petrona:wght@500;600;700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style2.css">
 </head>
 <body>
 
-    <header class="header" id="siteHeader">
-        <section>
-            <div class="logo">
-                <a href="#home"><img src="./imgLaco/laco.png" alt="Laço"></a>
-            </div>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="#home">Início</a></li>
-                    <li><a href="#fluxos">Como funciona</a></li>
-                    <li><a href="#trabalhos">Serviços</a></li>
-                </ul>
-            </nav>
-            <a href="sac.html" class="header-cta">Fale Conosco</a>
-        </section>
-    </header>
+<header class="header">
+  <div class="w">
+    <a class="logo" href="#home"><img src="./imgLaco/laco.png" alt="Laço — início" width="190" height="76"></a>
+    <nav class="nav" aria-label="Principal">
+      <a href="#home">Início</a><a href="#fluxos">Como funciona</a><a href="#trabalhos">Serviços</a><a href="#contato">Contato</a><a href="#perguntas">Dúvidas</a>
+    </nav>
+    <a href="#contato" class="btn btn-deep">Fale conosco</a>
+  </div>
+</header>
 
-    <main>
+<main>
+<section id="home" class="dark">
+  <div class="w hero">
+    <div>
+      <h1>Cuidado que se estende ao dia a dia da família.</h1>
+      <p class="lead">O Laço conecta cuidadores de confiança a idosos e seus familiares, acompanhando rotina, saúde e bem-estar em um só lugar.</p>
+      <ul class="points">
+        <li>Cuidadores com documentos conferidos, escolhidos pela família</li>
+        <li>Histórico de cada visita, direto no app</li>
+        <li>Atualizações de saúde e rotina para quem está à distância</li>
+      </ul>
+      <div class="actions">
+        <a href="#trabalhos" class="btn btn-rose">Ver serviços</a>
+        <a href="#contato" class="btn btn-line">Falar com a equipe</a>
+      </div>
+    </div>
+    <div class="stage" id="stage" tabindex="0" role="region" aria-roledescription="carrossel" aria-label="Fotos do Laço">
+      <div class="chip c1"><i>&#10003;</i>Visita registrada</div>
+      <div class="slider" id="slider">
+        <div class="slide on" data-cap="Cuidado em casa"><img src="./imgLaco/v1.png" alt="Cuidador auxiliando um idoso em casa" width="1200" height="800" fetchpriority="high"></div>
+        <div class="slide" data-cap="Atenção em cada gesto" aria-hidden="true"><img src="./imgLaco/v2.png" alt="Momento de cuidado entre cuidador e idoso" width="1200" height="800" loading="lazy"></div>
+        <div class="slide" data-cap="Presença nas consultas" aria-hidden="true"><img src="./imgLaco/v3.png" alt="Idoso acompanhado durante uma consulta" width="1200" height="800" loading="lazy"></div>
+        <div class="slide" data-cap="Família por dentro da rotina" aria-hidden="true"><img src="./imgLaco/v4.png" alt="Família acompanhando a rotina de cuidado pelo app" width="1200" height="800" loading="lazy"></div>
+        <div class="slide" data-cap="Companhia que faz bem" aria-hidden="true"><img src="./imgLaco/v5.png" alt="Cuidador e idoso em momento de companhia" width="1200" height="800" loading="lazy"></div>
+        <div class="cap" id="cap" aria-live="polite">Cuidado em casa</div>
+        <button class="sbtn prev" type="button" aria-label="Foto anterior">&#8592;</button>
+        <button class="sbtn next" type="button" aria-label="Próxima foto">&#8594;</button>
+      </div>
+      <div class="chip c2"><i>&#9829;</i>Família por perto</div>
+      <div class="thumbs" id="thumbs"><button class="pause" id="pause" type="button">Pausar</button></div>
+    </div>
+  </div>
+</section>
 
-        <section id="home">
-            <div class="hero">
+<div class="band">
+  <ul class="w" aria-label="Por que confiar">
+    <li><strong>Documentos oficiais</strong>Todo cuidador envia documentos para entrar no Laço.</li>
+    <li><strong>Avaliações das famílias</strong>O desempenho é acompanhado pelas avaliações de clientes.</li>
+    <li><strong>Converse antes de contratar</strong>Tire dúvidas com o cuidador antes de decidir.</li>
+  </ul>
+</div>
 
-                <div class="hero-text">
-                    <h1>Cuidado que se estende ao dia a dia da família.</h1>
-                    <p class="hero-lead">O Laço conecta cuidadores de confiança a idosos e seus familiares, acompanhando rotina, saúde e bem-estar em um só lugar.</p>
+<section id="fluxos">
+  <div class="w">
+    <div class="head"><h2>Como funciona</h2><p class="lead">Um caminho simples para cada lado do cuidado.</p></div>
+    <div class="fl">
+      <article class="fluxo">
+        <header><img src="./imgLaco/f.png" alt="" width="64" height="64" loading="lazy"><div><span class="tag">Para famílias</span><h3>Acompanhe de perto, mesmo à distância</h3></div></header>
+        <ol>
+          <li><b>Escolha o cuidado</b>Veja os serviços e os perfis dos cuidadores.</li>
+          <li><b>Converse e contrate</b>Fale com o cuidador antes de fechar.</li>
+          <li><b>Acompanhe</b>Veja quem cuidou, o que foi feito e atualizações de saúde e rotina.</li>
+        </ol>
+      </article>
+      <article class="fluxo">
+        <header><img src="./imgLaco/c4.png" alt="" width="64" height="64" loading="lazy"><div><span class="tag">Para cuidadores</span><h3>Organize sua agenda e construa confiança</h3></div></header>
+        <ol>
+          <li><b>Cadastre-se</b>Envie seus documentos oficiais.</li>
+          <li><b>Receba solicitações</b>Famílias da sua região entram em contato.</li>
+          <li><b>Registre cada visita</b>Mantenha horários e histórico em um só lugar.</li>
+        </ol>
+      </article>
+    </div>
+  </div>
+</section>
 
-                    <ul class="hero-points">
-                        <li>Cuidadores verificados, escolhidos pela família</li>
-                        <li>Histórico de cada visita, direto no app</li>
-                        <li>Atualizações de saúde e rotina em tempo real</li>
-                    </ul>
+<section id="trabalhos">
+  <div class="w">
+    <div class="head"><h2>Serviços</h2><p class="lead">O tipo de cuidado que sua família pode ter ao contratar um de nossos cuidadores. Atendimento de manhã, tarde e noite.</p></div>
+    <div class="cards">
+      <article class="card"><img src="./imgLaco/velho2.jpeg" alt="" width="600" height="400" loading="lazy"><div class="cb"><h3>Cuidados Domiciliares</h3><p>Assistência com tarefas diárias, no conforto de casa.</p><ul class="tags"><li>Tarefas do dia</li><li>Presença em casa</li></ul></div></article>
+      <article class="card"><img src="./imgLaco/velho3.jpeg" alt="" width="600" height="400" loading="lazy"><div class="cb"><h3>Higiene Pessoal</h3><p>Banho, troca de roupas e cuidados diários, com respeito e atenção.</p><ul class="tags"><li>Banho</li><li>Troca de roupas</li></ul></div></article>
+      <article class="card"><img src="./imgLaco/velho4.jpeg" alt="" width="600" height="400" loading="lazy"><div class="cb"><h3>Administração de Medicamentos</h3><p>Organização e administração conforme a prescrição médica e os horários definidos.</p><ul class="tags"><li>Organização</li><li>Horários definidos</li></ul></div></article>
+      <article class="card"><img src="./imgLaco/velho5.jpeg" alt="" width="600" height="400" loading="lazy"><div class="cb"><h3>Acompanhamento em Consultas</h3><p>Consultas, exames e passeios, com segurança durante o trajeto.</p><ul class="tags"><li>Consultas e exames</li><li>Passeios</li></ul></div></article>
+      <article class="card"><img src="./imgLaco/velho6.jpeg" alt="" width="600" height="400" loading="lazy"><div class="cb"><h3>Companhia e Socialização</h3><p>Conversa, lazer e interação para estimular o bem-estar emocional.</p><ul class="tags"><li>Conversa</li><li>Lazer</li></ul></div></article>
+      <article class="card"><img src="./imgLaco/velho7.jpeg" alt="" width="600" height="400" loading="lazy"><div class="cb"><h3>Preparação de Refeições</h3><p>Refeições simples e saudáveis, respeitando restrições e recomendações médicas.</p><ul class="tags"><li>Refeições saudáveis</li><li>Respeita restrições</li></ul></div></article>
+    </div>
+    <p class="note">Os cuidadores não fazem faxina nem lavam e passam roupas, e não substituem profissionais de saúde.</p>
+  </div>
+</section>
 
-                    <div class="hero-actions">
-                        <a href="#trabalhos" class="btn-primary">Ver serviços disponíveis</a>
-                        <a href="sac.html" class="btn-ghost">Falar com a equipe</a>
-                    </div>
-                </div>
+<section id="contato" class="dark">
+  <div class="w ct">
+    <div>
+      <h2>Fale com a gente</h2>
+      <p class="lead">Dúvida sobre um profissional, um serviço ou o app? Envie o formulário e a equipe responde em breve.</p>
 
-                <div class="hero-media">
-                    <div class="slider-container">
-                        <div class="slider-track" id="track">
-                            <div class="slide"><img src="./imgLaco/v1.png" alt="Cuidador auxiliando um idoso em casa"></div>
-                            <div class="slide"><img src="./imgLaco/v2.png" alt="Momento de cuidado entre cuidador e idoso"></div>
-                            <div class="slide"><img src="./imgLaco/v3.png" alt="Idoso acompanhado durante uma consulta"></div>
-                            <div class="slide"><img src="./imgLaco/v4.png" alt="Família acompanhando a rotina de cuidado pelo app"></div>
-                            <div class="slide"><img src="./imgLaco/v5.png" alt="Cuidador e idoso em momento de companhia"></div>
-                        </div>
-                        <button class="btn btn-prev" onclick="mudar(-1)" aria-label="Slide anterior">&#8592;</button>
-                        <button class="btn btn-next" onclick="mudar(1)" aria-label="Próximo slide">&#8594;</button>
-                    </div>
-                    <div class="dots" id="dots"></div>
-                </div>
+    </div>
+    <form class="form" id="form" action="enviarSac.php" method="POST">
+      <div class="msg ok" id="ok" role="status" hidden>Mensagem enviada! Logo entraremos em contato.</div>
+      <div class="msg err" id="err" role="alert" hidden>Não foi possível enviar. Tente de novo ou ligue para (11) 99972-4272.</div>
+      <div class="row">
+        <div class="f"><label for="nome">Nome</label><input id="nome" name="nome" type="text" autocomplete="name" maxlength="100" placeholder="Seu nome" required></div>
+        <div class="f"><label for="email">E-mail</label><input id="email" name="email" type="email" autocomplete="email" maxlength="150" placeholder="seu@email.com" required></div>
+      </div>
+      <div class="f"><label for="assunto">Assunto</label>
+        <select id="assunto" name="assunto" required>
+          <option value="">Selecione um assunto</option>
+          <option>Parceria comercial</option>
+          <option>Problemas com profissionais</option>
+          <option>Problemas com o app Laço</option>
+          <option>Dúvidas</option>
+          <option>Outro</option>
+        </select></div>
+      <div class="f"><label for="msg">Mensagem</label><textarea id="msg" name="mensagem" maxlength="2000" placeholder="Conte um pouco mais sobre o que você precisa..." required></textarea></div>
+      <div class="hp" aria-hidden="true"><label>Não preencha <input name="website" tabindex="-1" autocomplete="off"></label></div>
+      <label class="chk"><input type="checkbox" name="consentimento" required> Concordo que o Laço use meus dados apenas para responder a esta mensagem (LGPD). Não envie dados de saúde por aqui.</label>
+      <button class="btn btn-deep" id="enviar" type="submit">Enviar mensagem</button>
+    </form>
+  </div>
+</section>
 
-            </div>
-        </section>
+<section id="perguntas">
+  <div class="w">
+    <div class="head"><h2>Perguntas frequentes</h2><p class="lead">Dúvidas comuns sobre nossos cuidadores.</p></div>
+    <div class="faq">
+      <details><summary>Quais funções o cuidador não desempenha?</summary><p>O cuidador não faz trabalhos domésticos: não lava nem passa roupas e não faz faxina nas residências.</p></details>
+      <details><summary>Posso confiar nos profissionais?</summary><p>Todos passam por um processo de seleção, com envio de documentos oficiais e acompanhamento constante pelas avaliações de clientes.</p></details>
+      <details><summary>Posso conversar com o cuidador antes de contratá-lo?</summary><p>Sim. Você pode entrar em contato antes da contratação para tirar dúvidas, conhecer a experiência e garantir que ele atende às necessidades do idoso.</p></details>
+      <details><summary>O serviço funciona aos finais de semana e feriados?</summary><p>Sim. Depende da disponibilidade de cada cuidador. No perfil do profissional você vê os horários de atendimento.</p></details>
+    </div>
+  </div>
+</section>
+</main>
 
-        <section id="fluxos">
-            <div class="fluxos-grid">
-                <div class="fluxo fluxo-cuidador">
-                    <div class="fluxo-photo">
-                        <img src="./imgLaco/c4.png" alt="Cuidador acompanhando um idoso">
-                    </div>
-                    <div class="fluxo-content">
-                        <span class="fluxo-tag">Para cuidadores</span>
-                        <h3>Organize sua agenda e construa confiança</h3>
-                        <p>Receba solicitações de famílias da sua região, acompanhe horários e mantenha um histórico de cada visita — tudo pelo Laço.</p>
-                    </div>
-                </div>
-                <div class="fluxo fluxo-familiar">
-                    <div class="fluxo-photo">
-                        <img src="./imgLaco/f.png" alt="Família acompanhando a rotina de cuidado">
-                    </div>
-                    <div class="fluxo-content">
-                        <span class="fluxo-tag">Para famílias</span>
-                        <h3>Acompanhe o cuidado de perto, mesmo à distância</h3>
-                        <p>Veja quem está cuidando do seu familiar, o que foi feito em cada visita e receba atualizações sobre saúde e rotina em tempo real.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+<footer class="footer">
+  <div class="w fg">
+    <div class="fbrand">
+      <a class="plate" href="#home"><img src="./imgLaco/laco.png" alt="Laço — início" width="190" height="58"></a>
+      <p>Cuidado que conecta famílias e cuidadores de confiança.</p>
+    </div>
+    <nav aria-label="Rodapé">
+      <h2>Navegue</h2>
+      <ul><li><a href="#home">Início</a></li><li><a href="#fluxos">Como funciona</a></li><li><a href="#trabalhos">Serviços</a></li><li><a href="#contato">Contato</a></li><li><a href="#perguntas">Dúvidas</a></li></ul>
+    </nav>
+    <div>
+      <h2>Projeto acadêmico</h2>
+      <address class="addr">Escola Técnica Estadual de Guaianazes<br>Rua Feliciano de Mendonça, 290<br>São Paulo, SP — 08460-365</address>
+      <a class="fmap" href="https://www.google.com/maps/search/?api=1&amp;query=Rua+Feliciano+de+Mendon%C3%A7a+290+S%C3%A3o+Paulo" target="_blank" rel="noopener">Ver no mapa </a>
+    </div>
+  </div>
+  <div class="w legal">
+    <p>&copy; <span id="ano">2026</span> Laço. Projeto de TCC.</p>
+    <div class="by"><span>Desenvolvido por</span><a class="plate sm" href="./index.html"><img src="./imgLaco/logotomia.png" alt="RazorByte" width="110" height="30"></a></div>
+    <a class="top" href="#home">Voltar ao topo &#8593;</a>
+  </div>
+</footer>
 
-        <section id="trabalhos">
+<script>
+(function(){
+  var sl=document.getElementById('slider'),s=sl.querySelectorAll('.slide'),n=s.length,th=document.getElementById('thumbs'),
+      pause=document.getElementById('pause'),cap=document.getElementById('cap'),stage=document.getElementById('stage'),
+      reduce=matchMedia('(prefers-reduced-motion: reduce)').matches,i=0,playing=!reduce,t,tb=[];
+  s.forEach(function(el,k){var b=document.createElement('button');b.type='button';b.className='thumb';
+    b.setAttribute('aria-label','Foto '+(k+1)+' de '+n+': '+el.dataset.cap);
+    b.innerHTML='<img src="'+el.querySelector('img').getAttribute('src')+'" alt="" width="62" height="62">';
+    b.onclick=function(){go(k)};th.insertBefore(b,pause);tb.push(b)});
+  function go(x){i=(x+n)%n;s.forEach(function(el,k){el.classList.toggle('on',k===i);el.setAttribute('aria-hidden',k!==i);
+    tb[k].setAttribute('aria-current',k===i)});cap.textContent=s[i].dataset.cap}
+  function run(){clearInterval(t);if(playing)t=setInterval(function(){go(i+1)},6000);pause.textContent=playing?'Pausar':'Reproduzir'}
+  document.querySelector('.prev').onclick=function(){go(i-1)};
+  document.querySelector('.next').onclick=function(){go(i+1)};
+  pause.onclick=function(){playing=!playing;run()};
+  stage.addEventListener('keydown',function(e){if(e.key==='ArrowLeft')go(i-1);if(e.key==='ArrowRight')go(i+1)});
+  var x0=null;stage.addEventListener('touchstart',function(e){x0=e.touches[0].clientX},{passive:true});
+  stage.addEventListener('touchend',function(e){if(x0===null)return;var d=e.changedTouches[0].clientX-x0;if(Math.abs(d)>40)go(i+(d<0?1:-1));x0=null});
+  stage.addEventListener('mouseenter',function(){clearInterval(t)});
+  stage.addEventListener('focusin',function(){clearInterval(t)});
+  stage.addEventListener('mouseleave',function(){sl.style.transform='';run()});
+  if(!reduce)stage.addEventListener('mousemove',function(e){var r=stage.getBoundingClientRect(),
+    dx=(e.clientX-r.left)/r.width-.5,dy=(e.clientY-r.top)/r.height-.5;
+    sl.style.transform='perspective(900px) rotateY('+(dx*8)+'deg) rotateX('+(-dy*8)+'deg)'});
+  go(0);run();
 
-            <div class="trabalhos-head">
-                <h2>Serviços</h2>
-                <p>Veja o tipo de cuidado que sua família pode ter, conforme a contratação de um de nossos cuidadores.</p>
-            </div>
-
-            <div class="cards-grid">
-
-                <div class="card">
-                    <img src="./imgLaco/velho2.jpeg" alt="Cuidados Domiciliares" />
-                    <div class="card-body">
-                        <h3>Cuidados Domiciliares</h3>
-                        <p>Assistência com tarefas diárias, no conforto de casa.</p>
-                        <div class="badge"><i class="ti ti-calendar"></i> Amanhã, tarde e noite</div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="./imgLaco/velho3.jpeg" alt="Higiene Pessoal" />
-                    <div class="card-body">
-                        <h3>Higiene Pessoal</h3>
-                        <p>Banho, troca de roupas e cuidados diários, com respeito e atenção.</p>
-                        <div class="badge"><i class="ti ti-calendar"></i> manhã, tarde e noite</div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="./imgLaco/velho4.jpeg" alt="Administração de Medicamentos" />
-                    <div class="card-body">
-                        <h3>Administração de Medicamentos</h3>
-                        <p>Organização e administração conforme orientação médica e horários definidos.</p>
-                        <div class="badge"><i class="ti ti-calendar"></i>  manhã, tarde e noite</div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="./imgLaco/velho5.jpeg" alt="Acompanhamento em Consultas" />
-                    <div class="card-body">
-                        <h3>Acompanhamento em Consultas</h3>
-                        <p>Acompanhamento em consultas, exames e passeios, com segurança durante o trajeto.</p>
-                        <div class="badge"><i class="ti ti-calendar"></i>  manhã, tarde e noite</div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="./imgLaco/velho6.jpeg" alt="Companhia e Socialização" />
-                    <div class="card-body">
-                        <h3>Companhia e Socialização</h3>
-                        <p>Conversa, lazer e interação para estimular o bem-estar emocional.</p>
-                        <div class="badge"><i class="ti ti-calendar"></i>  manhã, tarde e noite</div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="./imgLaco/velho7.jpeg" alt="Preparação de Refeições" />
-                    <div class="card-body">
-                        <h3>Preparação de Refeições</h3>
-                        <p>Refeições simples e saudáveis, respeitando restrições e recomendações médicas.</p>
-                        <div class="badge"><i class="ti ti-calendar"></i>  manhã, tarde e noite</div>
-                    </div>
-                </div>
-
-            </div>
-
-        </section>
-
-        <footer class="footer">
-            <div class="footer-container">
-
-                <div class="footer-logo">
-                    <img class="footer-logo-img" src="./imgLaco/laco.png" alt="Laço">
-                    <p class="footer-tagline">Cuidado que conecta.</p>
-                </div>
-
-                <div class="footer-contact">
-                    <h3>Contato</h3>
-                    <p>(11) 99972-4272</p>
-
-                    <h3>Empresa responsável</h3>
-                    <a href="./index.html"><img class="logotomia" src="./imgLaco/logotomia.png" alt="RazorByte"></a>
-                </div>
-
-                <div class="footer-location">
-                    <h3>Localização</h3>
-                    <p>
-                        Escola Técnica Estadual de Guaianazes<br>
-                        Rua Feliciano de Mendonça, 290 — São Paulo, SP<br>
-                        08460-365
-                    </p>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p>&copy; 2025 Laço — desenvolvido pela RazorByte.</p>
-            </div>
-        </footer>
-
-    </main>
-
-    <script>
-        var atual = 0;
-        var total = 5;
-        var track = document.getElementById("track");
-        var dotsContainer = document.getElementById("dots");
-
-        for (var i = 0; i < total; i++) {
-            var dot = document.createElement("div");
-            dot.className = "dot" + (i === 0 ? " active" : "");
-            dot.setAttribute("data-i", i);
-            dot.onclick = function() { irPara(parseInt(this.getAttribute("data-i"))); };
-            dotsContainer.appendChild(dot);
-        }
-
-        function irPara(index) {
-            atual = index;
-            track.style.transform = "translateX(-" + (atual * 100) + "%)";
-            var dots = document.querySelectorAll(".dot");
-            for (var i = 0; i < dots.length; i++) {
-                dots[i].className = "dot" + (i === atual ? " active" : "");
-            }
-        }
-
-        function mudar(direcao) {
-            var proximo = (atual + direcao + total) % total;
-            irPara(proximo);
-        }
-
-        setInterval(function() { mudar(1); }, 9000);
-
-        window.addEventListener('scroll', function() {
-            var header = document.getElementById('siteHeader');
-            if (window.scrollY > 40) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-        });
-    </script>
-
+    // Formulário: estado de envio e campos preservados em caso de erro
+  var f=document.getElementById('form'),ids=['nome','email','assunto','msg'],q=new URLSearchParams(location.search);
+  f.addEventListener('submit',function(){
+    try{var s={};ids.forEach(function(x){s[x]=document.getElementById(x).value});sessionStorage.setItem('laco',JSON.stringify(s))}catch(e){}
+    var e=document.getElementById('enviar');e.disabled=true;e.textContent='Enviando…'});
+  if(q.get('enviado')==='1'){document.getElementById('ok').hidden=false;try{sessionStorage.removeItem('laco')}catch(e){}}
+  else if(q.has('enviado')||q.has('erros')){document.getElementById('err').hidden=false;
+    try{var d=JSON.parse(sessionStorage.getItem('laco')||'{}');ids.forEach(function(x){if(d[x])document.getElementById(x).value=d[x]})}catch(e){}}
+  if(q.has('enviado')||q.has('erros'))history.replaceState(null,'',location.pathname+'#contato');
+  var links={};document.querySelectorAll('.nav a').forEach(function(a){links[a.getAttribute('href').slice(1)]=a});
+  if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){
+    for(var k in links)links[k].removeAttribute('aria-current');if(links[e.target.id])links[e.target.id].setAttribute('aria-current','true')}})},{rootMargin:'-40% 0px -55% 0px'});
+    Object.keys(links).forEach(function(id){var el=document.getElementById(id);if(el)io.observe(el)})}
+  document.getElementById('ano').textContent=new Date().getFullYear();
+})();
+</script>
 </body>
 </html>
