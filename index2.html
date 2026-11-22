@@ -208,7 +208,8 @@
     try{var s={};ids.forEach(function(x){s[x]=document.getElementById(x).value});sessionStorage.setItem('laco',JSON.stringify(s))}catch(e){}
     var e=document.getElementById('enviar');e.disabled=true;e.textContent='Enviando…'});
   if(q.get('enviado')==='1'){document.getElementById('ok').hidden=false;try{sessionStorage.removeItem('laco')}catch(e){}}
-  else if(q.has('enviado')||q.has('erros')){document.getElementById('err').hidden=false;
+  else if(q.has('enviado')||q.has('erros')){var er=document.getElementById('err');er.hidden=false;
+    if(q.get('erros'))er.textContent=q.get('erros').split('|').join(' • ');
     try{var d=JSON.parse(sessionStorage.getItem('laco')||'{}');ids.forEach(function(x){if(d[x])document.getElementById(x).value=d[x]})}catch(e){}}
   if(q.has('enviado')||q.has('erros'))history.replaceState(null,'',location.pathname+'#contato');
   var links={};document.querySelectorAll('.nav a').forEach(function(a){links[a.getAttribute('href').slice(1)]=a});
