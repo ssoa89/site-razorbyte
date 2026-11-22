@@ -5,19 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RazorByte | Desenvolvimento de Software</title>
   <meta name="description" content="RazorByte é uma empresa de desenvolvimento de software. Conheça o Laço, nosso produto que conecta cuidadores e idosos, e o time por trás dele.">
+  <meta name="theme-color" content="#070B14">
+  <meta property="og:title" content="RazorByte | Desenvolvimento de Software">
+  <meta property="og:description" content="Conheça o Laço, app que conecta cuidadores e idosos, e o time RazorByte.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="imagi/laco.webp">
+  <link rel="icon" href="imagi/logo-razorbyte.webp" type="image/webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body id="top">
 
 <!-- NAVBAR -->
 <header class="site-header" id="siteHeader">
   <div class="site-header-inner">
-    <a href="#" class="site-logo" aria-label="RazorByte">
-      <img src="imagi/logotomia.png" alt="RazorByte">
+    <a href="#top" class="site-logo" aria-label="RazorByte — início">
+      <img src="imagi/logo-razorbyte.webp" alt="RazorByte" width="480" height="211">
     </a>
 
     <nav class="site-nav" id="menu" aria-label="Principal">
@@ -32,12 +38,12 @@
       <a class="btn-cta" href="#contato">
         Fale conosco
       </a>
-      <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
     </div>
   </div>
   <span class="scroll-progress" aria-hidden="true"></span>
 </header>
 
+<main id="conteudo">
 <!-- HERO -->
 <section class="hero-top">
   <div class="hero-top-inner">
@@ -45,7 +51,17 @@
       RazorByte é<br>
       <span class="hl" id="hl"><span class="hl-text" id="hlText">ágil</span></span>
     </h1>
-    <div class="hero-options" id="heroOptions" aria-label="Trocar adjetivo do título"></div>
+    <p class="hero-sub">Somos um time de 8 estudantes da Etec de Guaianazes criando software com propósito. Nosso primeiro produto é o <strong>Laço</strong>, app que conecta famílias a cuidadores de idosos.</p>
+    <div class="hero-ctas">
+      <a class="hero-btn hero-btn-main" href="#review">Conheça o Laço</a>
+      <a class="hero-btn hero-btn-ghost" href="#equipe">Ver a equipe</a>
+    </div>
+    <div class="hero-options-row">
+      <div class="hero-options" id="heroOptions" aria-label="Trocar adjetivo do título"></div>
+      <button class="hero-pause" id="heroPause" type="button" aria-label="Pausar troca de palavras">
+        <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path class="i-pause" d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z" fill="currentColor"/><path class="i-play" d="M8 5v14l11-7z" fill="currentColor"/></svg>
+      </button>
+    </div>
   </div>
 </section>
 
@@ -55,10 +71,11 @@
     <div class="galeria-frame">
 
       <div class="galeria-track" id="track">
-         <figure class="galeria-slide"><img src="imagi/coder.png" alt="Tela do produto Laço em desenvolvimento"></figure>
-        <figure class="galeria-slide"><img src="imagi/laco.png" alt="Time RazorByte trabalhando em uma sprint"></figure>
-        <figure class="galeria-slide"><img src="imagi/etecs.png" alt="Equipe RazorByte na Etec de Guaianases"></figure>
-        <figure class="galeria-slide"><img src="imagi/trabalhoRazor.png" alt="Reunião de planejamento da equipe RazorByte"></figure>
+        <figure class="galeria-slide"><img src="imagi/laco.webp" alt="Telas do app Laço: início, busca de cuidador e perfil" width="1600" height="900" fetchpriority="high"></figure>
+        <figure class="galeria-slide"><img src="imagi/equipe-mosaico.webp" alt="Os 8 integrantes da equipe RazorByte" width="1600" height="870" loading="lazy"></figure>
+        <figure class="galeria-slide"><img src="imagi/trabalhoRazor.webp" alt="Equipe RazorByte programando no laboratório" width="1600" height="900" loading="lazy"></figure>
+        <figure class="galeria-slide"><img src="imagi/visuLaco.webp" alt="Telas de acesso do Laço: boas-vindas, perfil e login" width="1600" height="686" loading="lazy"></figure>
+        <figure class="galeria-slide"><img src="imagi/etecs.webp" alt="Etec de Guaianazes, onde a RazorByte nasceu" width="1600" height="686" loading="lazy"></figure>
       </div>
 
       <div class="galeria-bar">
@@ -83,7 +100,7 @@
     <div class="about-inner">
       <div class="about-top reveal">
         <div class="about-text">
-          <h2 class="about-title">Sobre a<br><span>Razorbyte</span></h2>
+          <h2 class="about-title">Sobre a <br><span>RazorByte</span></h2>
           <p class="about-p">A RazorByte é uma empresa de desenvolvimento de software criada por jovens apaixonados por tecnologia. Nascemos com um propósito claro: transformar ideias em soluções digitais rápidas, elegantes e eficientes.</p>
           <p class="about-p">Nosso principal projeto, o <strong class="grad-text">Laço</strong>, conecta cuidadores a idosos — provando que tecnologia pode gerar impacto humano real.</p>
           <a class="about-cta" href="#review">
@@ -107,11 +124,11 @@
             </div>
             <div class="about-stat">
               <div class="about-stat-n">1</div>
-              <div class="about-stat-l">Produto em desenvolvimento</div>
+              <div class="about-stat-l">Produto: o app Laço</div>
             </div>
             <div class="about-stat">
-              <div class="about-stat-n">100%</div>
-              <div class="about-stat-l">Foco em inovação</div>
+              <div class="about-stat-n" data-fixo>2026</div>
+              <div class="about-stat-l">Ano do nosso TCC</div>
             </div>
           </div>
         </div>
@@ -123,7 +140,7 @@
   <section class="destaques projects-section" id="review">
     <div class="projects-inner">
       <div class="projects-heading reveal">
-        <h2 class="title">Principal <span>Projeto</span></h2>
+        <h2 class="title">Nosso <span>projeto</span></h2>
         <p class="projects-sub">
           Uma solução pensada para aproximar pessoas, facilitar cuidados e gerar impacto no dia a dia.
         </p>
@@ -131,7 +148,7 @@
 
       <article class="project-feature reveal">
         <div class="project-feature-media">
-          <img src="imagi/lacooo.jpeg" alt="Projeto Laço">
+          <img src="imagi/lacoAnu.webp" alt="Telas do app Laço: login, serviços de cuidadores e boas-vindas" width="1200" height="675" loading="lazy">
           <span class="project-media-caption">RAZORBYTE / 2026</span>
         </div>
 
@@ -176,7 +193,7 @@
       <!-- MEMBRO 1 -->
       <div class="member-card reveal">
         <div class="member-photo-wrap">
-          <img class="member-photo" src="imagi/DIEGO.png" alt="Diego Sousa">
+          <img class="member-photo" src="imagi/DIEGO.webp" width="320" height="497" loading="lazy" alt="Diego Sousa">
         </div>
         <div class="member-name">Diego Sousa</div>
         <div class="member-role">@ssoa89</div>
@@ -196,7 +213,7 @@
       <!-- MEMBRO 2 -->
       <div class="member-card reveal">
         <div class="member-photo-wrap">
-          <img class="member-photo" src="imagi/DavidP.png" alt="David Santos">
+          <img class="member-photo" src="imagi/DavidP.webp" width="320" height="713" loading="lazy" alt="David Santos">
         </div>
         <div class="member-name">David Santos</div>
         <div class="member-role">@David-Santos0</div>
@@ -216,7 +233,7 @@
       <!-- MEMBRO 3 -->
       <div class="member-card reveal">
         <div class="member-photo-wrap">
-          <img class="member-photo" src="imagi/Arthur.png" alt="Bárbara Delmondes">
+          <img class="member-photo" src="imagi/Arthur.webp" width="320" height="345" loading="lazy" alt="Bárbara Delmondes">
         </div>
         <div class="member-name">Bárbara Delmondes</div>
         <div class="member-role">@its-insomnia</div>
@@ -236,16 +253,13 @@
       <!-- MEMBRO 4 -->
       <div class="member-card reveal">
         <div class="member-photo-wrap">
-          <img class="member-photo" src="imagi/joao.png" alt="João Lopes">
+          <img class="member-photo" src="imagi/joao.webp" width="320" height="569" loading="lazy" alt="João Lopes">
         </div>
         <div class="member-name">João Lopes</div>
         <div class="member-role">@joao-souls</div>
         <div class="member-socials">
           <a class="member-soc" href="https://www.instagram.com/jv_l0p3s/" aria-label="Instagram" target="_blank" rel="noopener">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-          </a>
-          <a class="member-soc" href="#" aria-label="LinkedIn" target="_blank" rel="noopener">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
           </a>
           <a class="member-soc" href="https://github.com/joao-souls" aria-label="GitHub" target="_blank" rel="noopener">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
@@ -259,7 +273,7 @@
       <!-- MEMBRO 5 -->
       <div class="member-card reveal">
         <div class="member-photo-wrap">
-          <img class="member-photo" src="imagi/Henrique.png" alt="Henrique Silva">
+          <img class="member-photo" src="imagi/Henrique.webp" width="320" height="427" loading="lazy" alt="Henrique Silva">
         </div>
         <div class="member-name">Henrique Silva</div>
         <div class="member-role">@Henrique-dev11</div>
@@ -279,7 +293,7 @@
       <!-- MEMBRO 6 -->
       <div class="member-card reveal">
         <div class="member-photo-wrap">
-          <img class="member-photo" src="imagi/caio.png" alt="Caio Queiroz">
+          <img class="member-photo" src="imagi/caio.webp" width="320" height="569" loading="lazy" alt="Caio Queiroz">
         </div>
         <div class="member-name">Caio Queiroz</div>
         <div class="member-role">@Caio-Queiroz26</div>
@@ -299,7 +313,7 @@
       <!-- MEMBRO 7 -->
       <div class="member-card reveal">
         <div class="member-photo-wrap">
-          <img class="member-photo" src="imagi/Gabriel.png" alt="Gabriel Quirino">
+          <img class="member-photo" src="imagi/Gabriel.webp" width="320" height="427" loading="lazy" alt="Gabriel Quirino">
         </div>
         <div class="member-name">Gabriel Quirino</div>
         <div class="member-role">@gq31917-lab</div>
@@ -319,7 +333,7 @@
       <!-- MEMBRO 8 -->
       <div class="member-card reveal">
         <div class="member-photo-wrap">
-          <img class="member-photo" src="imagi/Davi.png" alt="Davi Areia">
+          <img class="member-photo" src="imagi/Davi.webp" width="320" height="427" loading="lazy" alt="Davi Areia">
         </div>
         <div class="member-name">Davi Areia</div>
         <div class="member-role">Membro do time</div>
@@ -350,13 +364,13 @@
         <!-- PARCEIRO 1 -->
         <article class="partner-card reveal">
           <div class="partner-card-media">
-            <img src="imagi/auvotis.jpeg" alt="Auvox">
+            <img src="imagi/auvox.webp" alt="Logo da Auvox" width="900" height="900" loading="lazy">
             <span class="partner-index">01</span>
           </div>
 
           <div class="partner-card-body">
             <span class="badge">Parceiro Oficial</span>
-            <h3>Auvox — Onde a inovação tem valor de Ouro</h3>
+            <h3>Auvox — Onde a inovação tem valor de ouro</h3>
             <p>
               Trabalhamos lado a lado com a Auvox para entregar soluções de alto impacto com excelência e inovação.
             </p>
@@ -366,7 +380,7 @@
         <!-- PARCEIRO 2 -->
         <article class="partner-card reveal">
           <div class="partner-card-media">
-            <img src="imagi/SkillDev.png" alt="SkillDev">
+            <img src="imagi/skilldev.webp" alt="Logo da SkillDev" width="900" height="490" loading="lazy">
             <span class="partner-index">02</span>
           </div>
 
@@ -467,14 +481,16 @@
             </div>
             <div>
               <div class="info-label">Localização</div>
-              <iframe class="footer-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.0!2d-46.3980!3d-23.5270!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce6552b4a0e5b1%3A0x1!2sEtec+de+Guaianases!5e0!3m2!1spt-BR!2sbr!4v1700000000000" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Localização RazorByte — São Paulo, SP" height="182" width="100%"></iframe>
-              <div class="info-val">Etec de Guaianases<br>R. Maneco Quitanda, 108 — SP</div>
+              <iframe class="footer-map" src="https://www.google.com/maps?q=Rua+Feliciano+de+Mendon%C3%A7a+290+Guaianazes+S%C3%A3o+Paulo&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Localização RazorByte — São Paulo, SP" height="182" width="100%"></iframe>
+              <div class="info-val">Etec de Guaianazes<br>Rua Feliciano de Mendonça, 290 — São Paulo, SP</div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+
+  </main>
 
   <div class="cut cut-to-ink">
     <svg viewBox="0 0 100 4" preserveAspectRatio="none">
@@ -483,7 +499,7 @@
   </div>
 
   <!-- FOOTER -->
-  <footer id="login">
+  <footer id="rodape">
     <div class="footer-inner">
       <div class="footer-top">
         <div class="footer-brand">
@@ -494,19 +510,13 @@
             <a class="footer-social-btn" href="https://www.instagram.com/razorbyte.dev/" target="_blank" rel="noopener" aria-label="Instagram">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
             </a>
-            <a class="footer-social-btn" href="#" aria-label="LinkedIn">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-            </a>
-            <a class="footer-social-btn" href="#" aria-label="GitHub">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-            </a>
           </div>
         </div>
 
         <div class="footer-col">
           <div class="footer-col-title">Produto</div>
           <ul>
-            <li><a href="#">Visão geral</a></li>
+            <li><a href="#galeria">Visão geral</a></li>
             <li><a href="#review">Projetos</a></li>
             <li><a href="./index2.html">Laço</a></li>
             <li><a href="#address">Parceiros</a></li>
@@ -533,27 +543,8 @@
   <script>
   document.addEventListener('DOMContentLoaded', function() {
 
-  // ── MENU + HEADER ──
-var menuBtn = document.getElementById("menuBtn");
+  // ── MENU ── (no celular os links ficam numa fileira rolável; não há menu suspenso)
 var menu = document.getElementById("menu");
-
-function fecharMenu() {
-  menu.classList.remove("open");
-  menuBtn.textContent = "Menu";
-  menuBtn.setAttribute("aria-expanded", "false");
-}
-
-menuBtn.addEventListener("click", function() {
-  var aberto = menu.classList.toggle("open");
-  menuBtn.textContent = aberto ? "Fechar" : "Menu";
-  menuBtn.setAttribute("aria-expanded", aberto);
-});
-menu.querySelectorAll("a").forEach(function(a) {
-  a.addEventListener("click", fecharMenu);
-});
-window.addEventListener("resize", function() {
-  if (window.innerWidth > 1000) fecharMenu();
-});
 
 // link ativo conforme a seção visível
 if ("IntersectionObserver" in window) {
@@ -584,7 +575,6 @@ if ("IntersectionObserver" in window) {
       var frame = document.querySelector(".galeria-frame");
       var atual = 0;
       var timer = null;
-      var reduzMovimento = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
       for (var i = 0; i < total; i++) {
         var dot = document.createElement("button");
@@ -613,8 +603,8 @@ if ("IntersectionObserver" in window) {
 
       function parar() { clearInterval(timer); }
 
+      // troca automática sempre ativa; com "reduzir movimento" o CSS só tira a animação
       function iniciar() {
-        if (reduzMovimento) return;
         parar();
         timer = setInterval(function() { irPara(atual + 1); }, 6000);
       }
@@ -794,6 +784,7 @@ if ("IntersectionObserver" in window) {
         entries.forEach(function(entry) {
           if (!entry.isIntersecting) return;
           var el = entry.target;
+          if (el.hasAttribute("data-fixo")) { statObserver.unobserve(el); return; }
           var raw = el.textContent.trim();
           var match = raw.match(/^(\d+)(.*)$/);
           if (!match) { statObserver.unobserve(el); return; }
@@ -896,6 +887,12 @@ if ("IntersectionObserver" in window) {
         for (var k = 0; k < opts.length; k++) {
           opts[k].classList.toggle("active", k === atual);
         }
+        // com "reduzir movimento": troca a palavra na hora, sem animação de saída
+        if (reduz) {
+          hlText.textContent = words[atual];
+          ajustar();
+          return;
+        }
         hlText.classList.add("out");
         setTimeout(function() {
           hlText.textContent = words[atual];
@@ -905,11 +902,21 @@ if ("IntersectionObserver" in window) {
       }
 
       function parar() { clearInterval(timer); }
+      // troca automática sempre ativa (antes ficava parada com "reduzir movimento" ligado no sistema);
+      // o botão de pausa deixa a pessoa parar de vez (acessibilidade, WCAG 2.2.2)
+      var pausado = false;
+      var btnPausa = document.getElementById("heroPause");
       function iniciar() {
-        if (reduz) return;
         parar();
+        if (pausado) return;
         timer = setInterval(function() { ir((atual + 1) % words.length); }, 3200);
       }
+      if (btnPausa) btnPausa.addEventListener("click", function() {
+        pausado = !pausado;
+        btnPausa.classList.toggle("paused", pausado);
+        btnPausa.setAttribute("aria-label", pausado ? "Retomar troca de palavras" : "Pausar troca de palavras");
+        iniciar();
+      });
 
       box.addEventListener("mouseenter", parar);
       box.addEventListener("mouseleave", iniciar);

@@ -2045,3 +2045,139 @@ footer::after{
 
 @media (max-width: 700px){ .hero-options{ border-radius: 22px; } }
 #contato::before{ opacity: 0.6; }
+
+/* ═══════════════════════════════════════════
+   NAVBAR — no estilo do site Laço: vidro claro, links em pílula,
+   logo grande. (sobrepõe as regras anteriores do cabeçalho)
+   ═══════════════════════════════════════════ */
+:root{ --header-h: 84px; }
+
+.site-header{
+  background: rgba(255,255,255,0.9);
+  -webkit-backdrop-filter: saturate(1.4) blur(12px);
+          backdrop-filter: saturate(1.4) blur(12px);
+  border-bottom: 1px solid var(--borda);
+}
+.site-header::after{ display: none; }
+.site-header.scrolled{ box-shadow: 0 8px 24px -12px rgba(15,23,42,0.18); }
+.site-header-inner{ gap: 24px; }
+
+/* logo já vem recortado (imagi/logo-razorbyte.webp) */
+.site-logo{ display: flex; align-items: center; height: 100%; }
+.site-logo img{ height: 68px; width: auto; max-width: none; }
+
+/* links em pílula, como no Laço */
+.site-nav{ gap: 4px; }
+.site-nav a{
+  font-size: 18px;
+  font-weight: 500;
+  color: #3B4357;
+  padding: 11px 20px;
+  border-radius: 99px;
+  transition: background var(--trans), color var(--trans);
+}
+.site-nav a:hover{
+  color: var(--azul-dark);
+  background: var(--azul-light);
+}
+.site-nav a.active{
+  color: var(--azul-dark);
+  font-weight: 600;
+  background: var(--azul-light);
+  box-shadow: none;
+}
+
+/* botão principal em pílula escura */
+.btn-cta{
+  height: 50px;
+  padding: 0 26px;
+  font-size: 17px;
+  font-weight: 600;
+  border-radius: 99px;
+  background: var(--ink);
+  box-shadow: none;
+}
+.btn-cta:hover{
+  transform: none;
+  background: var(--azul);
+  box-shadow: none;
+}
+
+/* celular: links viram uma fileira rolável abaixo do logo (sem menu suspenso) */
+@media (max-width: 1000px){
+  :root{ --header-h: 118px; }
+  .site-header-inner{
+    height: auto;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 66px 52px;
+    row-gap: 0;
+    column-gap: 12px;
+  }
+  .site-logo img{ height: 54px; }
+
+  .site-nav{
+    position: static;
+    grid-column: 1 / -1;
+    grid-row: 2;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    justify-self: stretch;
+    gap: 4px;
+    margin: 0 calc(-1 * var(--gutter));
+    padding: 0 var(--gutter) 6px;
+    background: none;
+    border: 0;
+    box-shadow: none;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .site-nav::-webkit-scrollbar{ display: none; }
+  .site-nav a{
+    font-size: 17px;
+    padding: 10px 16px;
+    white-space: nowrap;
+  }
+
+  .menu-btn{ display: none; }
+  .btn-cta{ display: inline-flex; height: 46px; padding: 0 20px; font-size: 16px; }
+}
+
+/* ═══════════════════════════════════════════
+   HERO — frase de valor, ações e pausa da troca de palavras
+   ═══════════════════════════════════════════ */
+.hero-sub{
+  max-width: 40em; margin: 0;
+  font-size: clamp(18px, 1.6vw, 22px); line-height: 1.6;
+  color: rgba(255,255,255,0.82);
+}
+.hero-sub strong{ color: #fff; }
+.hero-ctas{ display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
+.hero-btn{
+  display: inline-flex; align-items: center; height: 54px; padding: 0 28px;
+  border-radius: 99px; font: 600 18px 'DM Sans', sans-serif; text-decoration: none;
+  transition: background var(--trans), color var(--trans), border-color var(--trans);
+}
+.hero-btn-main{ background: var(--azul); color: #fff; }
+.hero-btn-main:hover{ background: var(--azul-dark); }
+.hero-btn-ghost{ color: #fff; border: 1.5px solid rgba(255,255,255,0.35); }
+.hero-btn-ghost:hover{ background: rgba(255,255,255,0.1); border-color: #fff; }
+.hero-options-row{ display: flex; align-items: center; justify-content: center; gap: 8px; flex-wrap: wrap; }
+.hero-pause{
+  width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; cursor: pointer;
+  color: #fff; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.22);
+  transition: background var(--trans);
+}
+.hero-pause:hover{ background: rgba(255,255,255,0.18); }
+.hero-pause .i-play{ display: none; }
+.hero-pause.paused .i-play{ display: block; }
+.hero-pause.paused .i-pause{ display: none; }
+
+/* nome do Laço com as cores da marca dele (roxo/rosa), não o azul da RazorByte */
+.project-feature .project-name.grad-text{
+  background: linear-gradient(90deg, #F2B8E6, #C58BDF);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
