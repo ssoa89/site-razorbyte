@@ -193,68 +193,6 @@
     0 12px 36px color-mix(in srgb, var(--cyan) 45%, transparent);
 }
 
-.menu-btn{
-  display: none;              /* escondido no desktop */
-  height: 52px;
-  padding: 0 22px;
-  font-family: 'DM Sans', sans-serif;
-  font-size: 17px;
-  font-weight: 600;
-  color: var(--azul-dark);
-  background: var(--azul-light);
-  border: 1px solid var(--azul-mid);
-  border-radius: 12px;
-  cursor: pointer;
-  transition: background var(--trans);
-}
-.menu-btn:hover{ background: var(--azul-mid); }
-
-/* ═══════════════════════════════════════════
-   RESPONSIVO — NAVBAR (dentro de um único @media)
-   ═══════════════════════════════════════════ */
-@media (max-width: 1000px){
-  :root{ --header-h: 68px; }
-  .site-header-inner{
-    height: var(--header-h);
-    grid-template-columns: 1fr auto;   /* logo | ações */
-    gap: 16px;
-  }
-  .site-logo img{ height: 42px; }
-
-  /* nav vira dropdown */
-  .site-nav{
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: flex-start;
-    justify-self: stretch;
-    gap: 4px;
-    padding: 16px 24px 24px;
-    background: var(--branco);
-    border-bottom: 1px solid var(--linha);
-    box-shadow: var(--sombra-md);
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-10px);
-    transition: opacity .25s ease, transform .3s var(--ease-out), visibility .25s;
-  }
-  .site-nav.open{
-    opacity: 1;
-    visibility: visible;
-    transform: none;
-  }
-  .site-nav a{
-    font-size: 20px;
-    padding: 18px 14px;
-    border-radius: 10px;
-  }
-
-  .btn-cta{ display: none; }
-  .menu-btn{ display: inline-flex; align-items: center; }
-}
   /* ═══════════════════════════════════════════
      BOTÕES PÍLULA
      ═══════════════════════════════════════════ */
@@ -2142,7 +2080,6 @@ footer::after{
     white-space: nowrap;
   }
 
-  .menu-btn{ display: none; }
   .btn-cta{ display: inline-flex; height: 46px; padding: 0 20px; font-size: 16px; }
 }
 
@@ -2181,3 +2118,22 @@ footer::after{
   background: linear-gradient(90deg, #F2B8E6, #C58BDF);
   -webkit-background-clip: text; background-clip: text; color: transparent;
 }
+
+/* ═══════════════════════════════════════════
+   SOBRE — "O que fazemos" (cartões de serviço)
+   ═══════════════════════════════════════════ */
+.svc-head{
+  margin: 0 0 14px; font: 600 14px 'DM Sans', sans-serif;
+  letter-spacing: .12em; text-transform: uppercase; color: var(--azul-dark);
+}
+.about-stat.svc{ text-align: left; padding: 22px 20px; display: flex; flex-direction: column; gap: 8px; }
+.svc-ico{
+  width: 48px; height: 48px; border-radius: 14px; display: grid; place-items: center;
+  background: var(--azul-light); color: var(--azul);
+}
+.svc-t{ margin: 4px 0 0; font: 700 20px/1.25 'DM Sans', sans-serif; color: var(--tinta); }
+.about-stat.svc .about-stat-l{ margin: 0; font-size: 16.5px; }
+.about-stat.svc:first-child .svc-ico{ background: rgba(255,255,255,0.16); color: #fff; }
+.about-stat.svc:first-child .svc-t{ color: #fff; }
+.about-stat.svc:last-child .svc-ico{ background: rgba(97,189,255,0.14); color: var(--cyan); }
+.about-stat.svc:last-child .svc-t{ color: #fff; }
