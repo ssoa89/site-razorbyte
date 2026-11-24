@@ -5,4 +5,6 @@ return [
     'smtp_user' => 'razorbytedev@gmail.com',
     'smtp_pass' => 'senha-de-app-de-16-letras',
     'destino'   => 'razorbytedev@gmail.com',
+    // opcional: endereço público do site, usado nos links do e-mail de confirmação
+    'site_url'  => '',
 ];

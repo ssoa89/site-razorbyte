@@ -27,6 +27,7 @@ Os dois sites enviam o formulário por e-mail via Gmail (SMTP), usando o PHPMail
 | `envioMail.php` | Recebe o formulário do site RazorByte |
 | `enviarSac.php` | Recebe o formulário do site Laço (exige consentimento LGPD) |
 | `mailer.php` | Lógica comum: validação, anti-spam (honeypot), limite de 1 envio/min por IP |
+| `email/templates.php` | E-mails em HTML com a marca de cada site: aviso para a equipe e confirmação automática para o visitante |
 
 ### Configuração (obrigatória)
 
