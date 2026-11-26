@@ -59,6 +59,18 @@ html.a11y-site-razorbyte.a11y-theme-dark :is(.about-visual,.project-feature,.mem
 html.a11y-site-razorbyte.a11y-theme-dark .form-inp{background:var(--papel);color:var(--tinta);border-color:var(--borda)}
 html.a11y-site-razorbyte.a11y-theme-dark .form-success{background:#14271d;color:#bcf0ca;border-color:#2f6545}
 html.a11y-site-razorbyte.a11y-theme-dark .form-error{background:#35191c;color:#ffc5c5;border-color:#7e363d}
+/* Tema escuro: contraste de itens que ficavam ilegíveis */
+html.a11y-site-razorbyte.a11y-theme-dark .btn-cta{background:#2f6fed;color:#fff}
+html.a11y-site-razorbyte.a11y-theme-dark .btn-cta:hover{background:#4f86f5}
+html.a11y-site-razorbyte.a11y-theme-dark .about-stat{background:var(--papel-2);border-color:var(--borda)}
+html.a11y-site-razorbyte.a11y-theme-dark .about-stat:first-child{background:#2f6fed;border-color:#2f6fed}
+html.a11y-site-razorbyte.a11y-theme-dark .about-stat:last-child{background:#070b14;border-color:var(--borda)}
+html.a11y-site-razorbyte.a11y-theme-dark .about-stat .about-stat-l{color:var(--tinta-60)}
+html.a11y-site-razorbyte.a11y-theme-dark .about-stat:first-child .about-stat-l{color:rgba(255,255,255,.88)}
+html.a11y-site-razorbyte.a11y-theme-dark .svc-ico{background:var(--azul-light);color:var(--azul)}
+html.a11y-site-laco.a11y-theme-dark .logo img{filter:brightness(0) invert(1)}
+html.a11y-site-razorbyte.a11y-theme-dark .site-nav a{color:var(--tinta-60)}
+html.a11y-site-razorbyte.a11y-theme-dark .site-nav a:hover,html.a11y-site-razorbyte.a11y-theme-dark .site-nav a.active{color:var(--tinta);background:var(--azul-light)}
 html.a11y-theme-dark .a11y-widget{color-scheme:dark}
 html.a11y-theme-light{color-scheme:light}
 @media(max-width:480px){.a11y-widget{right:12px;bottom:12px}.a11y-trigger{min-height:50px;padding:0 14px}.a11y-panel{bottom:60px}}
