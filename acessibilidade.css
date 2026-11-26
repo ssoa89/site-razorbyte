@@ -80,3 +80,12 @@ html.a11y-theme-dark .a11y-widget{color-scheme:dark}
 html.a11y-theme-light{color-scheme:light}
 @media(max-width:480px){.a11y-widget{right:12px;bottom:12px}.a11y-trigger{min-height:50px;padding:0 14px}.a11y-panel{bottom:60px}}
 @media(prefers-reduced-motion:reduce){.a11y-skip-link{transition:none}}
+
+/* Botão como aba lateral (meio da tela, à direita): não cobre as setas
+   dos carrosséis nem os botões do canto inferior. O texto segue no aria-label. */
+.a11y-widget{right:0;bottom:auto;top:50%;transform:translateY(-50%)}
+.a11y-trigger{min-height:0;width:52px;height:56px;padding:0;justify-content:center;border-right:0;border-radius:16px 0 0 16px;box-shadow:0 4px 18px #0004}
+.a11y-trigger span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.a11y-trigger svg{width:26px;height:26px}
+.a11y-panel{right:60px;bottom:auto;top:50%;transform:translateY(-50%);max-height:min(620px,calc(100dvh - 24px))}
+@media(max-width:480px){.a11y-widget{right:0;bottom:auto}.a11y-trigger{width:38px;height:48px;padding:0;border-radius:12px 0 0 12px}.a11y-trigger svg{width:22px;height:22px}.a11y-panel{right:46px;bottom:auto;width:calc(100vw - 58px)}}
