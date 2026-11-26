@@ -2137,3 +2137,8 @@ footer::after{
 .about-stat.svc:first-child .svc-t{ color: #fff; }
 .about-stat.svc:last-child .svc-ico{ background: rgba(97,189,255,0.14); color: var(--cyan); }
 .about-stat.svc:last-child .svc-t{ color: #fff; }
+
+/* card do produto: mostra a arte inteira dos celulares, completando com o roxo do fundo dela */
+.project-feature-media{ background: #3e1a3d; }
+.project-feature-media img{ object-fit: contain; }
+.project-feature:hover .project-feature-media img{ transform: scale(1.03); }
