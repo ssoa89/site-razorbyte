@@ -33,7 +33,6 @@
       <a href="#review">Produto</a>
       <a href="#equipe">Equipe</a>
       <a href="#address">Parceiros</a>
-      <a href="#contato">Contato</a>
     </nav>
 
     <div class="site-actions">
@@ -563,7 +562,7 @@ if ("IntersectionObserver" in window) {
       });
     });
   }, { rootMargin: "-40% 0px -55% 0px" });
-  ["about", "review", "equipe", "address", "contato"].forEach(function(id) {
+  ["about", "review", "equipe", "address"].forEach(function(id) {
     var s = document.getElementById(id);
     if (s) spy.observe(s);
   });
