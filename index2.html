@@ -15,8 +15,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Petrona:wght@500;600;700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style2.css">
+<link rel="stylesheet" href="acessibilidade.css">
 </head>
 <body>
+<a class="a11y-skip-link" href="#conteudo">Pular para o conteúdo principal</a>
 
 <header class="header">
   <div class="w">
@@ -28,7 +30,7 @@
   </div>
 </header>
 
-<main>
+<main id="conteudo">
 <section id="home" class="hero">
   <div class="w hero-top">
     <div class="hero-copy">
@@ -235,6 +237,7 @@
     cap.textContent=s[i].dataset.cap;capDesc.textContent=s[i].dataset.desc||'';count.textContent=pad(i+1)+' / '+pad(n)}
   function setPlaying(p){stage.classList.toggle('is-playing',p);th.classList.toggle('is-playing',p);
     pause.setAttribute('aria-label',p?'Pausar apresentação':'Reproduzir apresentação');pause.classList.toggle('paused',!p)}
+  document.addEventListener('a11ypreferencechange',function(e){if(e.detail.motion&&stage.classList.contains('is-playing'))setPlaying(false)});
   stage.querySelector('.prev').onclick=function(){go(i-1)};
   stage.querySelector('.next').onclick=function(){go(i+1)};
   pause.onclick=function(){setPlaying(!stage.classList.contains('is-playing'))};
@@ -268,5 +271,6 @@
     setTimeout(function(){document.getElementById('nome').focus({preventScroll:true})},500)})});
 })();
 </script>
+<script src="acessibilidade.js" defer></script>
 </body>
 </html>

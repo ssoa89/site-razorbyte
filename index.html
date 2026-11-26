@@ -14,10 +14,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="acessibilidade.css">
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 
 <body id="top">
+  <a class="a11y-skip-link" href="#conteudo">Pular para o conteúdo principal</a>
 
 <!-- NAVBAR -->
 <header class="site-header" id="siteHeader">
@@ -910,6 +912,9 @@ if ("IntersectionObserver" in window) {
       // o botão de pausa deixa a pessoa parar de vez (acessibilidade, WCAG 2.2.2)
       var pausado = false;
       var btnPausa = document.getElementById("heroPause");
+      document.addEventListener("a11ypreferencechange", function(event) {
+        if (event.detail.motion && btnPausa && !btnPausa.classList.contains("paused")) btnPausa.click();
+      });
       function iniciar() {
         parar();
         if (pausado) return;
@@ -931,6 +936,7 @@ if ("IntersectionObserver" in window) {
         .then(function() { ajustar(); iniciar(); });
     })();
   </script>
+  <script src="acessibilidade.js" defer></script>
 
 </body>
 </html>
